@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:font-size="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Курсы</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="../static/index.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header_items">
+            <a class="headline" href="http://127.0.0.1:5000/">Онлайн курсы Егора</a>
+            <a class="courses" href="http://127.0.0.1:5000/courses">Курсы</a>
+            {% if current_user.is_authenticated %}
+            <a href="http://127.0.0.1:5000/logout" class="login_button">Выйти</a>
+            {% else %}
+            <a href="http://127.0.0.1:5000/login" class="login_button">Войти</a>
+            {% endif %}
+        </div>
+
+    </div>
+    <div class="main">
+        <h1 align="center" style="font-size:40px;">Курсы</h1>
+        <br>
+        {% if current_user.is_authenticated and current_user.status == 1%}
+        <center>
+            <a class="button2" href="/create_course">Создать новый курс</a>
+        </center>
+        <br>
+        {% endif %}
+        <section class="articles">
+            {% for course in courses %}
+            <article class="course">
+                <a href="http://127.0.0.1:5000/course/{{course.id}}" style="font-size:3.3vw; color: white; text-decoration: none; width:100%; display: flex">{{course.title}}</a>
+                <a></a>
+                <a style="font-size:20px; display: flex">Длительность {{ course.duration }}</a>
+            </article>
+            {% endfor %}
+
+        </section>
+
+    </div>
+</body>
+</html>

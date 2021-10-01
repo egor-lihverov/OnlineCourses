@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #1a1f25;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.wrapper {
+  width: 400px;
+  margin: 12% auto;
+}
+
+form {
+  position: relative;
+}
+
+.clear {
+    clear:both;
+}
+
+.headline {
+    color: #e6b333;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+
+.sign-in {
+  float: left;
+  color: white;
+  font-size: 1.3em;
+}
+
+.button {
+  float: right;
+  color: #7f8084;
+  border: 1px solid #22272d;
+  padding: 7px 15px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #d3d3d3;
+}
+
+.user {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 7px;
+  left: 5px;
+}
+.user::after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  background: #22272d;
+  top: 0px;
+  left: 100%;
+}
+
+input {
+   background: transparent;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 5px 0;
+  outline: none;
+
+}
+
+
+input[type="email"] {
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 15px;
+  color: #e6b333;
+}
+input#name{
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 15px;
+  color: #e6b333;
+}
+
+input[type="password"] {
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 15px;
+  color: #e6b333;
+}
+
+
+input[type="submit"] {
+  background: #e6b333;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+
+
+
+

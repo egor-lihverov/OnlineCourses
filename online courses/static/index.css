@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #1a1f25;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: wrap-content;
+}
+
+.header_items{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+
+}
+
+.headline{
+    color: #e6b333;
+    font-size: 1.8em;
+    padding-right: 30%;
+    padding-left: 10px;
+
+}
+
+.login_button{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    outline: 2px dotted #e6b333 ; /* Чёрная рамка */
+    border: 1px solid #000 ; /* Белая рамка */
+    border-radius: 2px; /* Радиус скругления */
+}
+
+
+
+.courses{
+    font-size: 20px;
+    color: white;
+    padding-right: 10%;
+
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.main {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: wrap-content;
+    color: white;
+    font-size: 25px;
+}
+
+.button2 {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    outline: 2px solid #e6b333 ;
+    border: 1px solid #000 ;
+    border-radius: 2px;
+}
+.course{
+    position: relative;
+    background: #e6b333;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 1fr 72px;
+    min-height: 130px;
+    padding: 20px 16px;
+    border-radius: 10px;
+    min-height: 130px;
+    min-width: 200px;
+    box-sizing: inherit;
+    grid-gap: 8px;
+
+}
+
+.articles{
+    grid-gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+input {
+   background: transparent;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 5px 0;
+  outline: none;
+
+
+}
+textarea{
+   background: transparent;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 5px 0;
+  outline: none;
+  color: white;
+}
+input#title{
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 15px;
+  color: #e6b333;
+}
+input#duration{
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 15px;
+  color: #e6b333;
+}
+
+input[type="submit"]{
+  background: #e6b333;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+input#text_files{
+  background: transparent;
+  border: 2px solid #22272d;
+  padding-left: 15px;
+  color: #e6b333;
+}

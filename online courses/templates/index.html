@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн курсы</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="../static/index.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header_items">
+            <a class="headline" href="http://127.0.0.1:5000/">Онлайн курсы Егора</a>
+            <a class="courses" href="http://127.0.0.1:5000/courses">Курсы</a>
+            {% if current_user.is_authenticated %}
+            <a href="http://127.0.0.1:5000/logout" class="login_button">Выйти</a>
+            {% else %}
+            <a href="http://127.0.0.1:5000/login" class="login_button">Войти</a>
+            {% endif %}
+
+        </div>
+
+    </div>
+    <div class="main">
+        <h1 align="center" style="font-size:40px;">О моих курсах</h1>
+        <br>
+        <p class="text_about">
+            {% for line in text %}
+            <p>{{ line }}</p>
+            {% endfor %}
+        </p>
+    </div>
+    <style>
+       p {
+        line-height: 1.5;
+       }
+     </style>
+</body>
+</html>

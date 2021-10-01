@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html xmlns:font-size="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+
+</head>
+
+<body>
+
+
+<div class="wrapper">
+    <div class="header">
+        <h1 class="headline" href="http://127.0.0.1:5000/">Онлайн курсы Егора Лихверова</h1>
+        <h3 class="sign-in">Авторизация</h3>
+        <a href="http://127.0.0.1:5000/register" class="button">
+            Регистрация
+        </a>
+
+    </div>
+    <div class="clear"></div>
+    <form action="" method="post">
+
+        <input class="email" type="email" name="email" id="email" placeholder="email"/>
+
+        <input type="password" name="password" id="password" placeholder="Пароль"/>
+
+        <input type="submit" value="Авторизоваться"/>
+
+        <center class="message">{{ message }}</center>
+
+    </form>
+</div>
+
+</body>
+</html>
